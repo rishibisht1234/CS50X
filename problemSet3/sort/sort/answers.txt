@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: it takes far less time to sort a already sorted list than sorting a unsorted list.
+
+sort2 uses: merge sort
+
+How do you know?: it is the fastest one with large input size and also takes nearly same amount of time for sorted or unsorted data. also its running time doesnt change too much with increasing input size.
+
+sort3 uses: selection sort
+
+How do you know?: it takes nearly same time to sort unsorted or already sorted list. On unsorted list it is faster than bubble one(sort1) and slower than merge sort(sort2).
