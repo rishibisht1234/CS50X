@@ -1,0 +1,14 @@
+High energy + high valence + high danceability → Bright, upbeat, party-like aura (lively, extroverted vibes).
+Low energy + low valence + low danceability → Calm, introspective, melancholic aura (moody, reflective, possibly sad).
+High energy + low valence → Intense, dark aura (angry, dramatic).
+Low energy + high valence → Warm, peaceful aura (soft, comforting, content)
+
+#problems:
+A listener may love both sad acoustic music and high-energy EDM. Averaging merges these into a “medium” mood that
+represents neither.
+Song 1 and song 100 are treated equally, even though one may have been played hundreds of times more.
+
+#better way:
+Weighted averages by play count
+Songs played more often should influence the aura more than songs barely making the top 100.
+
