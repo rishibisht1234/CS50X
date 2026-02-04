@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+
+                //QUestion 1
+                const buttons = document.querySelectorAll('.q1');
+                buttons.forEach(function(btn){
+                    btn.addEventListener('click', function(event){
+                        const clicked = event.target;
+                        if(clicked.innerHTML === '200'){
+                            clicked.style.backgroundColor = 'green';
+                            document.querySelector('#feedback1').innerHTML = 'Correct!'
+
+                        }
+                        else{
+                            clicked.style.backgroundColor = 'red';
+                            document.querySelector('#feedback1').innerHTML = 'Incorrect'
+                        }
+                    })
+                })
+
+                //Question2
+                const btn = document.querySelector('#q2');
+                btn.addEventListener('click', function(event){
+                    const answer = document.querySelector('#ans2').value;
+                    const clicked = event.target;
+                    if(answer === '32'){
+                        clicked.style.backgroundColor= 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!'
+                    }
+                    else{
+                        clicked.style.backgroundColor= 'red';
+                        document.querySelector('#feedback2').innerHTML = 'incorrect'
+                    }
+
+                })
+
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                     <h3>What is the status code for 'OK' ?</h3>
+                     <p id = 'feedback1'></p>
+                    <button class="q1">404</button>
+                    <button class="q1">200</button>
+                    <button class="q1">301</button>
+                    <button class="q1">500</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                    <h3>How many bits long is the IPv4 address?</h3>
+                    <p id = 'feedback2'></p>
+                    <input id = 'ans2' type="text" placeholder="Enter your answer here">
+                    <button id='q2'>Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
