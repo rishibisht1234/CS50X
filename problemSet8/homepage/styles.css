@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+    transition: background 1.5s ease;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body.green {
+    background: linear-gradient(135deg, #ffffff 0%, #7CFF9B 100%);
+}
+
+body.blue {
+    background: linear-gradient(135deg, #ffffff 0%, #7CCBFF 100%);
+}
+
+/* Ripple effect */
+.ripple {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: ripple-expand 1.2s ease-out forwards;
+    z-index: 9999;
+}
+
+.ripple.green {
+    background: radial-gradient(circle, rgba(124,255,155,0.6) 0%, rgba(124,255,155,0.3) 40%, rgba(124,255,155,0.1) 60%, transparent 70%);
+}
+
+.ripple.blue {
+    background: radial-gradient(circle, rgba(124,203,255,0.6) 0%, rgba(124,203,255,0.3) 40%, rgba(124,203,255,0.1) 60%, transparent 70%);
+}
+
+@keyframes ripple-expand {
+    from {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    to {
+        width: 300vmax;
+        height: 300vmax;
+        opacity: 0;
+    }
+}
+
+
+/* Top section */
+.header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+
+.nav a:hover {
+    color: #000;
+}
+
+/* Content section */
+.content {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}

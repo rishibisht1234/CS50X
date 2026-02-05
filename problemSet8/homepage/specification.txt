@@ -1,0 +1,20 @@
+1. <header> tag include the profile pic. my full name. and the navbar
+2. <nav> tag include all the anchor tags as navbar components to go from one page to another
+3. <a> tag used for home,education,projects,CS50 journey,fun
+4. <main> contains the main body of each page
+5. <ul> and <li> tags used to make list of points
+6. <p> tags to explain about myself using paragraphs.
+7. <section> tag to seperate sections of differet topics
+8. <div> same as sections but less specific
+9. <input> tag to take input from user in the FUN page
+10. <button> to make calculator in the fun page.
+etc...
+
+javascript:
+# added evenlistener to the image so when user click on the profile pic it will change the background of the page from white to green to blue alternatvily
+# added eventlistner to the fun page's input tag to continuously get the input as the user is typung and show it below the buttons.
+# added eventlistner to the buttons (success and alert) to change the html of the page dynamically based on the button clicked
+# added eventlistenr to the calculator and buttons and added logic to implement calculator.
+
+#added Css to make the content alignment centered
+#changed the image size and shape
